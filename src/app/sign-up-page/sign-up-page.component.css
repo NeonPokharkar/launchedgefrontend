@@ -1,0 +1,21 @@
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    gap: 16px;
+    padding: 24px; /* Added padding to all sides */
+}
+.form-group {
+    padding: 8px 0;
+}
+
+.standard-button {
+    padding: 10px 20px;
+}
+
+.form-group label {
+    color: purple;
+    font-weight: bold;
+}
+

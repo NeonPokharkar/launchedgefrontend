@@ -1,0 +1,21 @@
+<div class="header-container" style="display: flex; justify-content: space-between; align-items: center; padding: 16px;">
+    <div class="logo" style="font-size: 2rem; font-weight: bold;">
+        <span style="color: black;">Launch</span><span style="color: purple;">Edge</span>
+    </div>
+    <div *ngIf="!checkIfUserLoggedIn()" style="margin-left: auto; display: flex; gap: 8px;">
+        <button mat-button class="standard-button" (click)="onLoginClick()">
+            Login
+        </button>
+        <button mat-button class="secondary-button" (click)="onSignUpClick()">
+            Sign Up
+        </button>
+    </div>
+    <div *ngIf="checkIfUserLoggedIn()" style="margin-left: auto; display: flex; align-items: center; gap: 8px;">
+        <span class="welcome-message" style="color: purple; font-weight: bold; font-size: 1rem; line-height: 36px;">
+            Welcome, {{username}}!
+        </span>
+        <button mat-button class="secondary-button" style="height: 36px; font-size: 1rem; padding: 0 16px;" (click)="onLogoutClick()">
+            Logout
+        </button>
+    </div>
+</div>
