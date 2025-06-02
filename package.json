@@ -1,12 +1,9 @@
 {
   "name": "launch-edge-frontend",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --configuration production",
-    "test": "ng test"
+    "start": "node server.js",
+    "heroku-postbuild": "ng build --configuration production"
   },
   "private": true,
   "dependencies": {
